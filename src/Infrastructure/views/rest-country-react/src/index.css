@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+html{
+    @apply text-[16px]
+}
+
+body{
+    @apply bg-darkSlateGray text-white
+}

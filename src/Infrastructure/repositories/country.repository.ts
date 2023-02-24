@@ -10,7 +10,8 @@ export const countryRepository = {
             title: productDTO.name.common,
             population: productDTO.population,
             region: productDTO.region,
-            capital: productDTO.capital
+            capital: productDTO.capital,
+            flag: productDTO.flags.svg ? productDTO.flags.svg : productDTO.flags.png
         }))
     }
 
