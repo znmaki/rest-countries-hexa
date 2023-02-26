@@ -450,6 +450,7 @@ interface Currencies {
     BYN?: ISK;
     MVR?: ISK;
     TJS?: ISK;
+    [key: number]: any;
 }
 
 interface SDG {
@@ -621,6 +622,7 @@ interface NativeName {
     div?: Isl;
     lit?: Isl;
     tgk?: Isl;
+    [key: number]: any;
 }
 
 interface Isl {

@@ -2,7 +2,7 @@ import './styles/FilterRegion.css';
 
 const FilterRegion = () => {
   return (
-    <select className='py-4 bg-darkSlateGray-100 rounded-lg'>
+    <select className='py-4 bg-darkSlateGray-100 rounded-lg pr-16 pl-4 border-r-[1rem] border-darkSlateGray-100'>
       <option value="">Filter by Region</option>
       <option value="africa">Africa</option>
       <option value="americas">America</option>

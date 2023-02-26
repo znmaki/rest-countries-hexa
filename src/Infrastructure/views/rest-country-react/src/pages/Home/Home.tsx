@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { countryService } from '../../../../../../Domain';
-import { CountriesBody, Header, OptionsCountry } from '../../components/organisms';
+import { CountriesBody, OptionsCountry } from '../../components';
 import './styles/Home.css';
 
 const Home = () => {
@@ -10,11 +10,8 @@ const Home = () => {
 		countryService.getCountries().then(setCountry)
 	}, [])
 
-	console.log(country);
-
 	return (
-		<div className='mx-4 space-y-7'>
-			<Header />
+		<div className='mx-4 space-y-7 2xl:mx-16'>
 			<OptionsCountry/>
 			<CountriesBody country={country} />
 		</div>
