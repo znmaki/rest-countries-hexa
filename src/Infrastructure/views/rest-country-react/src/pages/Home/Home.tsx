@@ -11,8 +11,8 @@ const Home = () => {
 	}, [])
 
 	return (
-		<div className='mx-4 space-y-7 2xl:mx-16'>
-			<OptionsCountry/>
+		<div className='home'>
+			<OptionsCountry />
 			<CountriesBody country={country} />
 		</div>
 	)

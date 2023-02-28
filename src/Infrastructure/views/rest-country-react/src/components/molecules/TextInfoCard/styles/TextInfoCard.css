@@ -1,3 +1,11 @@
-.textinfocard{
+.text-card-charging {
+  @apply flex space-x-4;
+}
 
+.card-charging__title {
+  @apply rounded-full bg-darkSlateGray-100 h-7 w-2/5;
+}
+
+.card-charging__text {
+  @apply rounded-full bg-darkSlateGray-100 h-7 w-3/5;
 }

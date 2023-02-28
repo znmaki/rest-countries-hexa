@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { countryService } from '../../../../../../Domain';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './styles/CountryCCA.css';
+import { InfoCountry, InfoCountryCharging } from '../../components';
 
 const CountryCCA = () => {
 	const [country, setCountry] = useState<any>([])
@@ -10,13 +11,17 @@ const CountryCCA = () => {
 
 	useEffect(() => {
 		countryService.getCountryCCA(`${query}`).then(setCountry)
-	}, [])
-
-	console.log(country);
-
+	}, [query])
 
 	return (
-		<div>CountryCCA</div>
+		<div className='cca'>
+			<Link to={'/'} className='cca__btn'>🡐 Back</Link>
+			{
+				country.length !== 0 ?
+					<InfoCountry country={country} /> :
+					<InfoCountryCharging />
+			}
+		</div>
 	)
 }
 

@@ -3,9 +3,9 @@ import './styles/SearchForm.css';
 
 const SearchForm = () => {
 	return (
-		<div className='searchform'>
-			<div className='bg-darkSlateGray-100 py-4 pl-8 rounded-l-lg'><Icon /></div>
-			<Input className='input' type='text' placeholder='Search for a country...' />
+		<div className='search-form'>
+			<div className='icon__container'><Icon /></div>
+			<Input className='search-form__input' type='text' placeholder='Search for a country...' />
 		</div>
 	)
 }

@@ -19,7 +19,8 @@ export const countryRepository = {
         const countrie = await http.get<CountriesDTO[]>(`https://restcountries.com/v3.1/alpha/${cca2}`)
         return countrie.map((countryDTO): CountryCCA2 => ({
             country_id: countryDTO.cca2,
-            title: countryDTO.name.nativeName ? Object.values(countryDTO.name.nativeName as any[])[0].official : countryDTO.name.common,
+            name: countryDTO.name.common,
+            nativeName: countryDTO.name.nativeName ? Object.values(countryDTO.name.nativeName as any[])[0].official : countryDTO.name.common,
             population: countryDTO.population,
             region: countryDTO.region,
             subregion: countryDTO.subregion ? countryDTO.subregion : 'Not data',

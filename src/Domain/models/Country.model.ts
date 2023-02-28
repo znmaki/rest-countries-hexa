@@ -9,8 +9,9 @@ export type Country = {
 
 export type CountryCCA2 = {
     country_id: string;
+    name: string;
+    nativeName: string;
     flag: string;
-    title: string;
     population: number;
     region: string;
     subregion: string;

@@ -5,18 +5,15 @@ import { Header } from "../../organisms"
 
 const Navigator = () => {
 	return (
-		<>
+		<BrowserRouter>
 			<Header />
-			<BrowserRouter>
-				<Routes>
-					<Route path='/' element={<Navigate to='/home' replace />} />
+			<Routes>
+				<Route path='/' element={<Navigate to='/home' replace />} />
 
-					<Route path='home' element={<Home />} />
-					<Route path='country/:query' element={<CountryCCA />} />
-				</Routes>
-			</BrowserRouter>
-		</>
-
+				<Route path='home' element={<Home />} />
+				<Route path='country/:query' element={<CountryCCA />} />
+			</Routes>
+		</BrowserRouter>
 	)
 }
 

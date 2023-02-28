@@ -1,0 +1,7 @@
+.neighbor-list {
+  @apply mt-4 mr-4;
+}
+
+.neighbor-list__text{
+  @apply bg-darkSlateGray-100 px-8 py-2 rounded-sm
+}

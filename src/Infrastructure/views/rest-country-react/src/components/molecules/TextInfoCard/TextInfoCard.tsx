@@ -1,25 +1,25 @@
-import { Image, Text, Title } from '../../atoms';
+import { Text, Title } from '../../atoms';
 import './styles/TextInfoCard.css';
 
 type TextCardProps = {
-	title: string;
-	content: string;
+	title?: string;
+	content?: string;
 }
 
 export const TextInfoCard = ({ title, content }: TextCardProps) => {
 	return (
 		<div className='flex'>
-			<Title type='h3' className='font-bold'>{title}</Title>
-			<Text>{content}</Text>
+			<Title type='h3' className='font-medium'>{title}</Title>
+			<Text className='font-thin'>{content}</Text>
 		</div>
 	)
 }
 
 export const TextCharging = () => {
 	return (
-		<div className='flex space-x-4'>
-			<Title type='h3' className='rounded-full bg-slate-700 h-7 w-2/5'></Title>
-			<Text className='rounded-full bg-slate-700 h-7 w-3/5'></Text>
+		<div className='text-card-charging'>
+			<Title type='h3' className='card-charging__title'></Title>
+			<Text className='card-charging__text'></Text>
 		</div>
 	)
 }

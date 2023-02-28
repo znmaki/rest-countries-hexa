@@ -1,17 +1,16 @@
-.searchform {
+.search-form {
   @apply flex;
 }
 
-.searchform:focus {
-  border: 1px solid red;
-  outline: none;
+.icon__container{
+  @apply bg-darkSlateGray-100 py-4 pl-8 rounded-l-lg
 }
 
-.input {
+.search-form__input {
   @apply pl-8 pr-16 bg-darkSlateGray-100 placeholder:text-white py-4 rounded-r-lg;
 }
 
-.input:focus {
+.search-form__input:focus {
   border: none;
   outline: none;
 }
