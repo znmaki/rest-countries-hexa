@@ -1,5 +1,4 @@
 import { Navigator } from "./components/route"
-import { Home } from "./pages"
 
 function App() {
   return (
