@@ -8,7 +8,7 @@ type TextCardProps = {
 
 export const TextInfoCard = ({ title, content }: TextCardProps) => {
 	return (
-		<div className='flex'>
+		<div className='flex flex-wrap'>
 			<Title type='h3' className='font-medium'>{title}</Title>
 			<Text className='font-thin'>{content}</Text>
 		</div>

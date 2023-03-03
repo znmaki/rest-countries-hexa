@@ -1,11 +1,11 @@
 import { FilterRegion, SearchForm } from '../../molecules';
 import './styles/OptionsCountry.css';
 
-const OptionsCountry = () => {
+const OptionsCountry = ({ children }: any) => {
+
 	return (
 		<div className='options-country'>
-			<SearchForm />
-			<FilterRegion />
+			{children}
 		</div>
 	)
 }

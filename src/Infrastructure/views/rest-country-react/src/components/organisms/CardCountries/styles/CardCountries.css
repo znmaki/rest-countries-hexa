@@ -7,7 +7,7 @@
 }
 
 .info__title{
-    @apply text-2xl font-bold py-4 sm:text-4xl lg:text-2xl
+    @apply text-2xl font-bold py-4 sm:text-4xl lg:text-2xl xl:truncate
 }
 
 .card-charging{
